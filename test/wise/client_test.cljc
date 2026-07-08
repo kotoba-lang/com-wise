@@ -30,7 +30,7 @@
 
 (deftest request-throws-on-non-2xx-transport-status
   (is (thrown-with-msg?
-       clojure.lang.ExceptionInfo
+       #?(:clj clojure.lang.ExceptionInfo :cljs js/Error)
        #"Wise API request failed"
        (client/request! "/v1/profiles" {:http-fn (stub-http-fn 401 "{\"error\":\"denied\"}") :token "t"}))))
 
@@ -39,6 +39,6 @@
 
 (deftest api-token-fails-closed-without-env-or-explicit-token
   (is (thrown-with-msg?
-       clojure.lang.ExceptionInfo
+       #?(:clj clojure.lang.ExceptionInfo :cljs js/Error)
        #"WISE_API_TOKEN is required"
        (client/request! "/v1/profiles" {:http-fn (stub-http-fn 200 "{}")}))))
