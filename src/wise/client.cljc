@@ -14,7 +14,7 @@
   scope for this library -- callers pass one, the same way cloudflare.client
   expects a pre-obtained CLOUDFLARE_API_TOKEN."
   (:require [clojure.string :as str]
-            #?(:clj [clojure.data.json :as json])))
+            #?(:clj [json.data-json :as json])))
 
 (def api-base "https://api.wise.com")
 (def sandbox-api-base "https://api.sandbox.transferwise.tech")
