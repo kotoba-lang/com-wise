@@ -8,7 +8,7 @@
 
 (ns wise.quotes-kotoba-parity-test
   (:require [clojure.java.shell :as sh]
-            [clojure.string :as str]
+            [kotoba.lang.text :as str]
             [clojure.test :refer [deftest is testing]]
             [wise.client :as client]
             [wise.quotes :as quotes]))
