@@ -13,7 +13,7 @@
   token for a Wise Partner integration). Obtaining that token is out of
   scope for this library -- callers pass one, the same way cloudflare.client
   expects a pre-obtained CLOUDFLARE_API_TOKEN."
-  (:require [clojure.string :as str]
+  (:require [kotoba.lang.text :as str]
             #?(:clj [json.data-json :as json])))
 
 (def api-base "https://api.wise.com")
