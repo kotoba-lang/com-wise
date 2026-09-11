@@ -69,7 +69,7 @@ gate.
 ## Tests
 
 ```sh
-clojure -M:test
+kbb -M:test
 ```
 
 No live account required -- every test injects a stub `:http-fn` and asserts
