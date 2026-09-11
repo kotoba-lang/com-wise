@@ -10,7 +10,7 @@
                             [[:path :string] [:method :string]]]})
   (:export [quote-request-path quote-request-method quote-request]))
 
-;; Parity: test/wise/quotes_kotoba_parity_test.clj
+;; Parity: test/wise/quotes_kotoba_parity_test.cljk
 
 (defn quote-request-path [profile-id :string] :string
   ;; cljc: (str "/v3/profiles/" profile-id "/quotes")
