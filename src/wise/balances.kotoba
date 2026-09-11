@@ -12,7 +12,7 @@
   (:export [list-balances-path list-balances-method list-balances-query
             list-balances-request]))
 
-;; Parity: test/wise/balances_kotoba_parity_test.clj
+;; Parity: test/wise/balances_kotoba_parity_test.cljk
 
 (defn list-balances-path [profile-id :string] :string
   ;; cljc: (str "/v4/profiles/" profile-id "/balances")
