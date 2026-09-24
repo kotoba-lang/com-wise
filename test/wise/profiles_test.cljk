@@ -1,5 +1,5 @@
 (ns wise.profiles-test
-  (:require [clojure.test :refer [deftest is]]
+  (:require [kotoba.test :refer [deftest is]]
             [wise.profiles :as profiles]))
 
 (defn- stub-http-fn [status body]

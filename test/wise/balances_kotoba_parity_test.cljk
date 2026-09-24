@@ -10,7 +10,7 @@
 (ns wise.balances-kotoba-parity-test
   (:require [clojure.java.shell :as sh]
             [kotoba.lang.text :as str]
-            [clojure.test :refer [deftest is testing]]
+            [kotoba.test :refer [deftest is testing]]
             [wise.balances :as balances]
             [wise.client :as client]))
 

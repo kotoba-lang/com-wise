@@ -1,5 +1,5 @@
 (ns wise.quotes-test
-  (:require [clojure.test :refer [deftest is]]
+  (:require [kotoba.test :refer [deftest is]]
             [wise.quotes :as quotes]))
 
 (deftest create-quote-posts-the-params-under-the-profiles-quotes-path

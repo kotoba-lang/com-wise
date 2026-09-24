@@ -1,5 +1,5 @@
 (ns wise.transfers-test
-  (:require [clojure.test :refer [deftest is]]
+  (:require [kotoba.test :refer [deftest is]]
             [wise.transfers :as transfers]))
 
 (deftest list-transfers-scopes-to-the-profile-and-optional-status

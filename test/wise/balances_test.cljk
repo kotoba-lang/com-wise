@@ -1,5 +1,5 @@
 (ns wise.balances-test
-  (:require [clojure.test :refer [deftest is]]
+  (:require [kotoba.test :refer [deftest is]]
             [wise.balances :as balances]))
 
 (deftest list-balances-hits-the-profiles-balances-path-with-standard-type
